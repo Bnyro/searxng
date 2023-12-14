@@ -1892,6 +1892,14 @@ engines:
   #   timeout: 5.0
   #   disabled: true
 
+  - name: metager
+    engine: metager
+    categories: general
+    metager_category: general
+    shortcut: mg
+    timeout: 10.0
+    disabled: true
+
   - name: mojeek
     shortcut: mjk
     engine: xpath
