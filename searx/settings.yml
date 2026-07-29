@@ -1781,6 +1781,31 @@ engines:
       require_api_key: false
       results: JSON
 
+  - name: oceanhero
+    engine: oceanhero
+    categories: general
+    oceanhero_categ: search
+    shortcut: oh
+
+  - name: oceanhero images
+    engine: oceanhero
+    categories: images
+    oceanhero_categ: images
+    page_size: 50
+    shortcut: ohi
+
+  - name: oceanhero videos
+    engine: oceanhero
+    categories: videos
+    oceanhero_categ: videos
+    shortcut: ohv
+
+  - name: oceanhero news
+    engine: oceanhero
+    categories: news
+    oceanhero_categ: news
+    shortcut: ohn
+
   - name: odysee
     engine: odysee
     shortcut: od
