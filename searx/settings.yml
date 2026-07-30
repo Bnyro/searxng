@@ -786,6 +786,18 @@ engines:
     shortcut: dh
     categories: [it, packages]
 
+  - name: ecosia
+    engine: ecosia
+    categories: general
+    ecosia_categ: search
+    shortcut: eco
+
+  - name: ecosia images
+    engine: ecosia
+    categories: images
+    ecosia_categ: images
+    shortcut: ecoi
+
   - name: encyclosearch
     engine: json_engine
     shortcut: es
