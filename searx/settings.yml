@@ -1214,6 +1214,30 @@ engines:
     timeout: 4.0
     disabled: true
 
+  - name: goodsearch
+    engine: goodsearch
+    goodsearch_categ: index
+    categories: general
+    shortcut: gds
+
+  - name: goodsearch images
+    engine: goodsearch
+    goodsearch_categ: images
+    categories: images
+    shortcut: gdsi
+
+  - name: goodsearch news
+    engine: goodsearch
+    goodsearch_categ: news
+    categories: news
+    shortcut: gdsn
+
+  - name: goodsearch videos
+    engine: goodsearch
+    goodsearch_categ: videos
+    categories: videos
+    shortcut: gdsv
+
   - name: google
     engine: google
     shortcut: go
