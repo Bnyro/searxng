@@ -3085,6 +3085,11 @@ engines:
     disabled: true
     inactive: true
 
+  - name: talordata
+    engine: talordata
+    shortcut: tal
+    timeout: 4.0
+
   - name: swisscows news
     engine: swisscows_news
     shortcut: swn
