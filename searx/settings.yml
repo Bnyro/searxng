@@ -809,6 +809,7 @@ engines:
     dogpile_categ: search
     categories: general
     disabled: true
+    inactive: true
 
   - name: dogpile images
     engine: dogpile
@@ -816,6 +817,7 @@ engines:
     dogpile_categ: images
     categories: images
     disabled: true
+    inactive: true
 
   - name: dogpile videos
     engine: dogpile
@@ -823,6 +825,7 @@ engines:
     dogpile_categ: videos
     categories: videos
     disabled: true
+    inactive: true
 
   - name: dogpile news
     engine: dogpile
@@ -830,6 +833,7 @@ engines:
     dogpile_categ: news
     categories: news
     disabled: true
+    inactive: true
 
   # duckduckgo uses html.duckduckgo.com,
   # duckduckgo web uses duckduckgo.com
