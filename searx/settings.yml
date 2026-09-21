@@ -1221,6 +1221,10 @@ engines:
     play_categ: movies
     disabled: true
 
+  - name: greppr
+    engine: greppr
+    shortcut: gr
+
   - name: grokipedia
     engine: grokipedia
     shortcut: gp
