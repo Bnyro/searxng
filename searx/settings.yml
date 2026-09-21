@@ -916,6 +916,10 @@ engines:
     inactive: true
     timeout: 5
 
+  - name: etools
+    engine: etools
+    shortcut: etch
+
   - name: 1x
     engine: www1x
     shortcut: 1x
