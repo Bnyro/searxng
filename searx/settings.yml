@@ -2625,6 +2625,10 @@ engines:
     shortcut: yhn
     inactive: true
 
+  - name: you
+    engine: you
+    shortcut: you
+
   - name: youtube
     shortcut: yt
     engine: youtube_noapi
