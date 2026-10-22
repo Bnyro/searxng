@@ -32,6 +32,8 @@ base_url = "https://andisearch.com"
 AndisearchCategory = t.Literal["results", "news", "images"]
 andisearch_categ: AndisearchCategory = "results"
 
+_impersonate = "none"
+
 
 def setup(_: dict[str, t.Any]):
     if andisearch_categ not in t.get_args(AndisearchCategory):
@@ -47,7 +49,7 @@ def _obtain_api_token() -> str:
         return token
 
     # user agent for token request must be the same as for the main request
-    token_resp = get(f"{base_url}/api/token", headers={"Referer": f"{base_url}/"}, impersonate="firefox")
+    token_resp = get(f"{base_url}/api/token", headers={"Referer": f"{base_url}/"}, impersonate=_impersonate)
     if not token_resp.ok:
         raise SearxEngineAPIException("failed to obtain api key")
 
@@ -62,7 +64,7 @@ def request(query: str, params: "OnlineParams"):
     params["headers"]["x-api-token"] = _obtain_api_token()
     params["headers"]["Origin"] = f"{base_url}"
     params["headers"]["Referer"] = f"{base_url}/"
-    params["impersonate"] = "firefox"
+    params["impersonate"] = _impersonate
 
     params["method"] = "POST"
     params["json"] = {
