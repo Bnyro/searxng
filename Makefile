@@ -14,6 +14,7 @@ help:
 	@./manage --help
 	@echo '----'
 	@echo 'run            - run developer instance'
+	@echo 'memray		  - trace memory allocations with memray'
 	@echo 'install        - developer install of SearxNG into virtualenv'
 	@echo 'uninstall      - uninstall developer installation'
 	@echo 'clean          - clean up working tree'
@@ -25,6 +26,10 @@ help:
 PHONY += run
 run:  install
 	$(Q)./manage webapp.run
+
+PHONY += memray
+memray:  install
+	$(Q)./manage webapp.memray
 
 PHONY += install uninstall
 install uninstall:

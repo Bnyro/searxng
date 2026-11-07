@@ -165,6 +165,15 @@ webapp.run() {
         pyenv.cmd granian searx.webapp:app
 }
 
+webapp.memray() {
+    (
+        sleep 3
+        xdg-open http://127.0.0.1:8888/
+    ) &
+
+    SEARXNG_DEBUG=1 memray run searx/webapp.py
+}
+
 # shellcheck disable=SC2119
 gecko.driver() {
     pyenv.install
